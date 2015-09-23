@@ -7,7 +7,7 @@ include 'includes/data.php';
 $id = $_GET['id'];
 
 // select the relevant shirt from our data array
-$shirt = $shirts[$id];
+$shirt = $shirts[$id];	//Dana Sez: what happens if the key '$id' doesn't exist in the array? Would it be good to use try/catch here?
 
 // set a page title for the header template to use
 $page_title = $shirt['name'];
