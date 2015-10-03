@@ -10,7 +10,7 @@ This is the source code for *[Creating a Dynamic Website with PHP and MySQL](htt
 
 * [Week 1](https://github.com/bucksphp/bucksphp/wiki/Week-1) (9/12)
 * [Week 2](https://github.com/bucksphp/bucksphp/wiki/Week-2) (9/19)
-* Week 3 (10/3)
+* [Week 3](https://github.com/bucksphp/bucksphp/wiki/Week-3) (10/3)
 * Week 4 (10/10)
 * Week 5 (10/17)
 * Week 6 (10/24)
