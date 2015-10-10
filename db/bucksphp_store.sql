@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 03, 2015 at 09:00 PM
+-- Generation Time: Oct 10, 2015 at 03:14 PM
 -- Server version: 5.6.26
 -- PHP Version: 5.6.12
 
@@ -81,6 +81,72 @@ CREATE TABLE IF NOT EXISTS `products_sizes` (
   `size_id` int(11) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
+--
+-- Dumping data for table `products_sizes`
+--
+
+INSERT INTO `products_sizes` (`product_id`, `size_id`) VALUES
+(1, 1),
+(1, 2),
+(1, 3),
+(1, 4),
+(2, 1),
+(2, 2),
+(2, 3),
+(2, 4),
+(3, 1),
+(3, 2),
+(3, 3),
+(3, 4),
+(4, 1),
+(4, 2),
+(4, 3),
+(4, 4),
+(5, 1),
+(5, 2),
+(5, 3),
+(5, 4),
+(6, 1),
+(6, 2),
+(6, 3),
+(6, 4),
+(7, 1),
+(7, 2),
+(7, 3),
+(7, 4),
+(8, 1),
+(8, 2),
+(8, 3),
+(8, 4),
+(9, 1),
+(9, 2),
+(9, 3),
+(9, 4),
+(10, 1),
+(10, 2),
+(10, 3),
+(10, 4),
+(11, 1),
+(11, 2),
+(11, 3),
+(11, 4),
+(12, 1),
+(12, 2),
+(12, 3),
+(12, 4),
+(13, 1),
+(13, 2),
+(13, 3),
+(13, 4),
+(14, 1),
+(14, 2),
+(14, 3),
+(14, 4),
+(15, 1),
+(15, 2),
+(15, 3),
+(15, 4);
+
 -- --------------------------------------------------------
 
 --
@@ -91,7 +157,17 @@ CREATE TABLE IF NOT EXISTS `sizes` (
   `id` int(11) NOT NULL,
   `name` varchar(100) COLLATE utf8_unicode_ci NOT NULL,
   `created_at` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
+
+--
+-- Dumping data for table `sizes`
+--
+
+INSERT INTO `sizes` (`id`, `name`, `created_at`) VALUES
+(1, 'Small', '2015-10-10 13:08:44'),
+(2, 'Medium', '2015-10-10 13:08:44'),
+(3, 'Large', '2015-10-10 13:08:44'),
+(4, 'XL', '2015-10-10 13:08:44');
 
 --
 -- Indexes for dumped tables
@@ -139,7 +215,7 @@ ALTER TABLE `products`
 -- AUTO_INCREMENT for table `sizes`
 --
 ALTER TABLE `sizes`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT,AUTO_INCREMENT=5;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
