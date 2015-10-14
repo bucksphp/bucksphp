@@ -37,6 +37,7 @@
 					<ul class="nav navbar-nav navbar-right">
 						<li><a href="about.php">About</a>
 						<li><a href="contact.php">Contact</a></li>
+						<li><a href="cart.php">Cart</a></li>
 					</ul>
 				</div>
 			</div>
