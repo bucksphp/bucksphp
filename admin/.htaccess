@@ -1,0 +1,8 @@
+# Prompt for user name and password to access this directory
+AuthUserFile c:\xampp\htdocs\cattitude84\admin\.htpasswd
+AuthType Basic
+AuthName "Secret Stuff"
+Require valid-user
+
+# Disable directory listing
+#Options -Indexes

@@ -1,0 +1,7 @@
+# enable mod_rewrite
+RewriteEngine on
+
+# create custom URL for buttefly kittens shirt
+RewriteRule ^butterfly-kittens$ detail.php?id=1 [L]
+RewriteRule ^google$ http://www.google.com [L]
+RewriteRule ^custom-url$ rewrite_test.php [L]

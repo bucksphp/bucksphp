@@ -3,21 +3,18 @@
 // Include $shirts data array
 include 'includes/data.php';
 
-// print HTML header
-include 'includes/header.php';
-?>
+// include template handler
+include 'includes/template.php';
 
-<div class="row">
-	<?php /* Loop through shirts and print thumbnails with links to detail pages. Note the foreach/endforeach alternate syntax. It's great for mixing in with HTML. */ ?>
-	<?php foreach ( $shirts as $id => $shirt ): ?>
-		<div class="col-sm-4">
-			<a href="detail.php?id=<?php echo $id; ?>"><img src="<?php echo $shirt['image']; ?>" alt="<?php echo $shirt['name']; ?>"></a>
-			<h4><a href="detail.php?id=<?php echo $id; ?>"><?php echo $shirt['name'] ?></a></h4>
-		</div>
-	<?php endforeach; ?>
-</div>
+// create new instance of template handler for index template
+$tpl = new Template('index');
 
-<?php
-// print footer HTML
-include 'includes/footer.php';
+// pass $shirts variable to our template
+$tpl->vars = array(
+	'shirts' => $shirts
+);
+
+// compile and print template
+$tpl->render();
+
 ?>
