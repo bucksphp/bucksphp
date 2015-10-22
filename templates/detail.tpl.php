@@ -11,9 +11,9 @@
 		<?php /* Print product description */ ?>
 		<p><?php echo $shirt['description']; ?></p>
 
-		<?php /* Print link to product on Etsy */ ?>
+		<?php /* Print link to add product to cart */ ?>
 		<p>
-			<a class="btn btn-primary" href="<?php echo $shirt['link']; ?>">Buy on Etsy</a>
+			<a class="btn btn-primary" href="cart.php?action=add&amp;id=<?php echo $shirt['id'] ?>">Add to Cart</a>
 		</p>
 	</div>
 </div>
